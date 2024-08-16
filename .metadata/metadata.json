@@ -1,0 +1,12 @@
+﻿{
+    "game_custom_data": {
+      "multiplayer_synchronized": true
+    },
+    "id": "",
+    "name": "Historically Accurate Schools",
+    "relationships": [],
+    "short_description": "Overhaul of education institution and universities.",
+    "supported_game_version": "1.7.*",
+    "tags": [],
+    "version": "1.0"
+}
