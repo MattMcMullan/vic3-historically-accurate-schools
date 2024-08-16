@@ -1,0 +1,34 @@
+﻿l_english:
+ # Pop Education Access
+ # Lower Strata
+ state_clerks_education_access_add:0 "Education Access for [GetPopType('clerks').GetName]"
+ state_clerks_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('clerks').GetName]"
+ state_laborers_education_access_add:0 "Education Access for [GetPopType('laborers').GetName]"
+ state_laborers_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('laborers').GetName]"
+ state_machinists_education_access_add:0 "Education Access for [GetPopType('machinists').GetName]"
+ state_machinists_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('machinists').GetName]"
+ # Base game comes with peasants
+ state_soldiers_education_access_add:0 "Education Access for [GetPopType('soldiers').GetName]"
+ state_soldiers_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('soldiers').GetName]"
+ state_slaves_education_access_add:0 "Education Access for [GetPopType('slaves').GetName]"
+ state_slaves_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('slaves').GetName]"
+ # Middle Strata
+ state_academics_education_access_add:0 "Education Access for [GetPopType('academics').GetName]"
+ state_academics_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('academics').GetName]"
+ state_bureaucrats_education_access_add:0 "Education Access for [GetPopType('bureaucrats').GetName]"
+ state_bureaucrats_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('bureaucrats').GetName]"
+ state_clergymen_education_access_add:0 "Education Access for [GetPopType('clergymen').GetName]"
+ state_clergymen_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('clergymen').GetName]"
+ state_engineers_education_access_add:0 "Education Access for [GetPopType('engineers').GetName]"
+ state_engineers_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('engineers').GetName]"
+ state_farmers_education_access_add:0 "Education Access for [GetPopType('farmers').GetName]"
+ state_farmers_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('farmers').GetName]"
+ state_officers_education_access_add:0 "Education Access for [GetPopType('officers').GetName]"
+ state_officers_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('officers').GetName]"
+ state_shopkeepers_education_access_add:0 "Education Access for [GetPopType('shopkeepers').GetName]"
+ state_shopkeepers_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('shopkeepers').GetName]"
+ # Upper Strata
+ state_aristocrats_education_access_add:0 "Education Access for [GetPopType('aristocrats').GetName]"
+ state_aristocrats_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('aristocrats').GetName]"
+ state_capitalists_education_access_add:0 "Education Access for [GetPopType('capitalists').GetName]"
+ state_capitalists_education_access_add_desc:0 "A bonus or penalty to education access for [GetPopType('capitalists').GetName]"
