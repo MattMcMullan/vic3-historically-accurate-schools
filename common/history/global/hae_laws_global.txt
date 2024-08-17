@@ -28,4 +28,47 @@ GLOBAL = {
 	c:PAN = {
 		activate_law = law_type:law_freedom_of_belief
 	}
+
+	# Moving slavery banned made these countries miss out on a banned slavery default
+	c:APC = { activate_law = law_type:law_slavery_banned }
+	c:ARP = { activate_law = law_type:law_slavery_banned }
+	c:BHU = { activate_law = law_type:law_slavery_banned }
+	c:CHI = { activate_law = law_type:law_slavery_banned }
+	c:CIR = { activate_law = law_type:law_slavery_banned }
+	c:CON = { activate_law = law_type:law_slavery_banned }
+	c:FRA = { activate_law = law_type:law_slavery_banned }
+	c:GBR = { activate_law = law_type:law_slavery_banned }
+	c:HAW = { activate_law = law_type:law_slavery_banned }
+	c:HBC = { activate_law = law_type:law_slavery_banned }
+	c:JAP = { activate_law = law_type:law_slavery_banned }
+	c:KOR = { activate_law = law_type:law_slavery_banned }
+	c:LIB = { activate_law = law_type:law_slavery_banned }
+	c:MON = { activate_law = law_type:law_slavery_banned }
+	c:NBS = { activate_law = law_type:law_slavery_banned }
+	c:NSW = { activate_law = law_type:law_slavery_banned }
+	c:NVJ = { activate_law = law_type:law_slavery_banned }
+	c:NVS = { activate_law = law_type:law_slavery_banned }
+	c:ONT = { activate_law = law_type:law_slavery_banned }
+	c:QUE = { activate_law = law_type:law_slavery_banned }
+	c:RUS = { activate_law = law_type:law_slavery_banned }
+	c:SAS = { activate_law = law_type:law_slavery_banned }
+	c:SIL = { activate_law = law_type:law_slavery_banned }
+	c:SWI = { activate_law = law_type:law_slavery_banned }
+	c:TAS = { activate_law = law_type:law_slavery_banned }
+	c:TGR = { activate_law = law_type:law_slavery_banned }
+	c:TUR = { activate_law = law_type:law_slavery_banned }
+	c:UNT = { activate_law = law_type:law_slavery_banned }
+	c:WAS = { activate_law = law_type:law_slavery_banned }
+
+	# Start out with sufficiently progressive European countries banning the practice.
+	# This follows the correct historical pattern without digging too deeply into the exact list.
+	every_country = {
+		limit = {
+			country_is_in_europe = yes
+			NOT = { has_law = law_type:law_no_womens_rights }
+			has_law = law_type:law_slavery_banned
+			NOT = { country_has_state_religion = rel:orthodox }
+		}
+		activate_law = law_type:law_child_marriage_banned
+	}
 }

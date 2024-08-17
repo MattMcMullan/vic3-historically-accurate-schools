@@ -8,3 +8,8 @@
 
   law_maternity_benefits: "Maternity Benefits"
   law_maternity_benefits_desc: "Paid maternity leave helps people feel more secure starting a family without having to sacrifice their career.\n\nFirst introduced in 1883. By 1914, 21 countries had maternity leave policies in place. About 60 percent of those policies offered some form of payment."
+
+  # Slavery Laws
+
+  law_child_marriage_banned: "Banned Child Marriage"
+  law_child_marriage_banned_desc: "Prior to the Industrial Revolution, women around the world were often married at an early age, usually soon after reaching puberty. These practices carried over well into the 19th century in societies with largely rural populations.\n\nPlacing the law in this category may feel a bit odd, but it both makes sense mechanically and is a statement about the conditions of its victims."
