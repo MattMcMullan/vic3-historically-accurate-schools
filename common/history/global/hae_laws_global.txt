@@ -1,0 +1,31 @@
+﻿# This is executed last among all history
+
+GLOBAL = {
+    # The original intent of law_total_separation has moved to law_freedom_of_belief
+	every_country = {
+		limit = {
+			has_law = law_type:law_total_separation
+		}
+		activate_law = law_type:law_freedom_of_belief
+	}
+
+    # Imported from UHS
+	every_country = {
+		limit = {
+			OR = {
+                country_has_primary_culture = cu:swedish
+                country_has_primary_culture = cu:danish
+                country_has_primary_culture = cu:norwegian
+                country_has_primary_culture = cu:alemannic
+				country_has_primary_culture = cu:north_german
+				country_has_primary_culture = cu:south_german
+            }
+		}
+		activate_law = law_type:law_freedom_of_conscience
+	}
+
+    # Imported from UHS
+	c:PAN = {
+		activate_law = law_type:law_freedom_of_belief
+	}
+}

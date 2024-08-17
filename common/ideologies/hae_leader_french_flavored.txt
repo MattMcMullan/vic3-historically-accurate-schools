@@ -1,0 +1,130 @@
+﻿
+ideology_legitimist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_legitimist.dds"
+
+	character_ideology = yes
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_presidential_republic = disapprove
+		law_parliamentary_republic = disapprove
+		law_theocracy = disapprove
+		law_council_republic = strongly_disapprove
+	}
+
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_approve
+		law_oligarchy = neutral
+		law_single_party_state = disapprove
+		law_landed_voting = strongly_disapprove	
+		law_wealth_voting = strongly_disapprove	
+		law_census_voting = strongly_disapprove		
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_technocracy = strongly_disapprove
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_approve # Was approve. From UHS
+		law_freedom_of_conscience = neutral # Was disapprove. From UHS
+		law_freedom_of_belief = disapprove # From UHS
+		law_total_separation = strongly_disapprove
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_disapprove
+		law_right_of_assembly = disapprove
+		law_censorship = approve
+		law_outlawed_dissent = strongly_approve
+	}
+
+	possible = {
+		NOT = { has_role = agitator }
+		# no monarchists in countries with strong republican tradition
+		owner = {
+			AND = {
+				exists = c:FRA
+				OR = {
+					c:FRA = this
+					civil_war_origin_country = c:FRA
+				}
+			}
+			NOR = {
+				any_interest_group = {
+					has_ideology = ideology:ideology_republican_paternalistic
+				}
+				has_variable = monarchy_stamped_out_var
+				AND = {
+					OR = {
+						has_variable = orleanist_restoration_var
+						has_variable = bonapartist_restoration_var
+					}
+					has_variable = one_true_french_dynasty
+				}
+			}
+		}
+		scope:interest_group = { 
+			OR = {
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_landowners
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+
+	leader_weight = {
+		value = 200
+		# less likely in a theocracy
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_theocracy
+				}
+			}
+			add = -75
+		}
+		# less likely if IG is happy in a republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_monarchy }
+				}
+				scope:interest_group = {
+					ig_approval > 0
+				}
+			}
+			add = -100
+		}
+
+		# more likely for LO and Devout
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_devout
+				}
+			}
+			add = 50
+		}
+		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
+		if = {
+			limit = {
+				scope:interest_group = {
+					has_variable = anti_dreyfusard_victory
+				}
+			}
+			add = 50
+		}
+	}
+}
