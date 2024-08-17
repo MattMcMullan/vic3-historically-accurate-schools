@@ -41,7 +41,7 @@ law_regulatory_bodies = {
 	institution_modifier = {
 		building_working_conditions_mult = 0.05 # New. Reduce effectiveness from the base institution
 		state_loyalists_from_sol_change_mult = 0.05 # From UHS
-		interest_group_ig_trade_unions_pol_str_mult = 0.05 # From UHS
+		interest_group_ig_trade_unions_pol_str_mult = 0.03 # Down from UHS's 0.05
 		# country_bureaucracy_investment_cost_factor_mult = 0.005 # From UHS
 		state_poor_standard_of_living_add = 0.125 # Half of UHS. Other half in next law
 	}
@@ -189,7 +189,7 @@ law_maternity_benefits = {
 		interest_group_ig_trade_unions_pol_str_mult = 0.05
 		state_loyalists_from_sol_change_mult = 0.05
 		state_poor_standard_of_living_add = 0.334 # Should display as 33%, 66%, 100%, 133%, 166%
-		state_birth_rate_mult = 0.03 # From a paper on the impact of maternity benefits on fertility.
+		state_birth_rate_mult = 0.006 # From a paper on the impact of maternity benefits on fertility.
 		state_welfare_payments_add = 0.02 # TODO: Consider social_security rebalance
 	}
 
