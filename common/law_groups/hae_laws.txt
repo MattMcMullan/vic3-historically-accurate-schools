@@ -1,0 +1,7 @@
+﻿
+lawgroup_policing = {
+	law_group_category = power_structure # Was economy
+	
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 0.15
+}
