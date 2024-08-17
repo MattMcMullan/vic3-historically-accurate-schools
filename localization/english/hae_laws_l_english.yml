@@ -3,3 +3,8 @@
 
   law_freedom_of_belief:0 "Freedom of Belief" 
   law_freedom_of_belief_desc:0 "While still identifying with the Traditional Faith of the Nation, this country has legal freedom and equality for practitioners of all Faiths."  
+
+  # Labor Rights Laws
+
+  law_maternity_benefits: "Maternity Benefits"
+  law_maternity_benefits_desc: "Paid maternity leave helps people feel more secure starting a family without having to sacrifice their career.\n\nFirst introduced in 1883. By 1914, 21 countries had maternity leave policies in place. About 60 percent of those policies offered some form of payment."
